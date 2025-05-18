@@ -31,5 +31,5 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Build app
-        run: npm run build
+      - name: Build Docker Image
+        run: docker build -t ecommerce-frontend:latest .

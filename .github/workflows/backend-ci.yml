@@ -31,5 +31,5 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Build (optional for backend)
-        run: echo "No build step for backend"
+      - name: Build Docker Image
+        run: docker build -t ecommerce-backend:latest .
